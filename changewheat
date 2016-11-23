@@ -1,0 +1,10 @@
+find . -type f -exec sed -i "s/Cpwcoin/Cpwcoin/g" {} \;
+find . -type f -exec sed -i "s/cpwcoin/cpwcoin/g" {} \;
+find . -type f -exec sed -i "s/CPWCOIN/CPWCOIN/g" {} \;
+find . -type f -exec sed -i "s/CPW/CPW/g" {} \;
+find . -type f -exec sed -i "s/9033/9033/g" {} \;
+find . -type f -exec sed -i "s/9132/9132/g" {} \;
+find . -type f -exec sed -i "s/This is the Artificial Intelligence CPCSILVER coin/This is the Artificial Intelligence CPWSILVER coin/g" {} \;
+find . -type f -exec sed -i "s/0x/0x/g" {} \;
+cd src/
+make -f makefile.unix USE_UPNP=-
